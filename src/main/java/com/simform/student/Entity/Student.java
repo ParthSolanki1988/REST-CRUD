@@ -9,12 +9,12 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@Entity
+@Entity         //map java object to database table
 @Table(name = "student")
 public class Student {
 
   @Id
-      @Column(name = "student_id")
+  @Column(name = "student_id")
   long id;
   @Column(name = "student_name")
   String name;

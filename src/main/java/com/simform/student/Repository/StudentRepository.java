@@ -4,10 +4,12 @@ import com.simform.student.Entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 
+
+/**
+ * @JpaReposiotry : Spring Data JPA will automatically create the implementation for the Repository interface.
+ */
 @Repository
 public interface StudentRepository extends JpaRepository<Student , Long> {
 
-  List<Student> findAllById(Long id);
 }
